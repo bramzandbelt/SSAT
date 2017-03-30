@@ -34,7 +34,7 @@ picture{
 } waiting_picture;
 
 picture{
-	text {caption = "Are you ready for the next level?";} wait_text_subject;
+	text {caption = "Are you ready? Press the response button to start";} wait_text_subject;
 	x = 0; y = 0;
 } waiting_picture_subject;
 
@@ -282,7 +282,7 @@ loop int iTask = 1 until iTask > 1 begin
 			end;
 
 			# Wait for trigger pulse in fMRI experiment
-			if environment == "1" && iRun > 1 then
+			if environment == "1" then
 				wait_for_subject.present();
 			elseif environment == "2" then
 				wait_for_trigger.present();
