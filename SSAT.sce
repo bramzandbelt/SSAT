@@ -11,8 +11,8 @@ default_font_size = 40;
 begin;
 
 picture{
-text{caption = "Stop-signal anticipation task \n Copyright (c) 2017 Bram Zandbelt \n \n 1.  Outside scanner (participant triggers task) \n 2.  Inside MRI scanner (scanner triggers task)"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
-	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;`	
+text{caption = "Stop-Signal Anticipation Task (SSAT) \nCopyright (c) 2017 Bram Zandbelt \n \n 1.  Outside scanner (participant triggers task) \n 2.  Inside MRI scanner (scanner triggers task)"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
+	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;
 }pic_input_env;
 
 picture{
