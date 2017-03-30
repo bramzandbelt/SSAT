@@ -53,7 +53,7 @@ trial {
 trial {
 	trial_duration = forever;
 	trial_type = specific_response;
-	terminator_button = 2;
+	terminator_button = 1;
 	picture waiting_picture_subject;
 	time = 0;
 	code = "wait_to_begin_subject";
