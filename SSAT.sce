@@ -11,8 +11,8 @@ default_font_size = 40;
 begin;
 
 picture{
-text{caption = "Stop-signal anticipation task \n 1.  Outside scanner \n 2.  Inside scanner"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
-	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;
+text{caption = "Stop-signal anticipation task \n Copyright (c) 2017 Bram B. Zandbelt \n \n 1.  Outside scanner (participant triggers task) \n 2.  Inside MRI scanner (scanner triggers task)"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
+	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;`	
 }pic_input_env;
 
 picture{
@@ -21,7 +21,7 @@ picture{
 }pic_input_subjcode;
 
 picture{
-	text{caption = "Stop-signal anticipation task \n 1.  Training 1:       Response timing (1 x 1m00s) \n 2.  Training 2:       Reactive inhibition (1 x 2m00s) \n 3.  Training 3:       Proactive and reactive inhibition (3 x 5m20s)\n 4.  Experiment 1:  Proactive and reactive inhibition (3 x 5m36s)\n 5.  Quit"; font_size = 24; text_align = align_left;}taskselect_text;	x = 0; y = 0;
+	text{caption = "Stop-signal anticipation task \n 1.  Practice stage 1:       Response timing \n 2.  Practice stage 2:       Reactive control \n 3.  Practice stage 3:       Proactive and reactive control \n 4.  Experiment:  Proactive and reactive control \n 5.  Quit"; font_size = 24; text_align = align_left;}taskselect_text;	x = 0; y = 0;
 	text{caption = " "; font_size = 24; }taskinput_text;x = 0; y = -200;
 }taskselect_picture;
 
@@ -223,17 +223,17 @@ loop int iTask = 1 until iTask > 1 begin
 
 	# Logfile naming
 	if task == "1" then
-		logFileName = subjectcode + "_TrainingResponseTiming_" + date_time("ddmmyyhhnnss")+".txt";
+		logFileName = subjectcode + "_SSAT_Practice01_Response-Timing_" + date_time("ddmmyyhhnnss")+".txt";
 		nRun = 1;
 	elseif task == "2" then
-		logFileName = subjectcode + "_TrainingReactiveInhibition_" + date_time("ddmmyyhhnnss")+".txt";
+		logFileName = subjectcode + "_SSAT_Practice02_Reactive-Control_" + date_time("ddmmyyhhnnss")+".txt";
 		nRun = 1;
 	elseif task == "3" then
-		logFileName = subjectcode + "_TrainingProactiveReactiveInhibition_" + date_time("ddmmyyhhnnss")+".txt";
-		nRun = 3;
+		logFileName = subjectcode + "_SSAT_Practice03_Proactive-Reactive-Control_" + date_time("ddmmyyhhnnss")+".txt";
+		nRun = 1;
 	elseif task == "4" then
-		logFileName = subjectcode + "_ExperimentProactiveReactiveInhibition_" + date_time("ddmmyyhhnnss")+".txt";
-		nRun = 3;
+		logFileName = subjectcode + "_SSAT_Experiment_ProactiveReactiveControl_" + date_time("ddmmyyhhnnss")+".txt";
+		nRun = 1;
 	end;
 
 	if task == "1" || task == "2" || task == "3" || task == "4" then
