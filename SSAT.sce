@@ -21,7 +21,7 @@ picture{
 }pic_input_subjcode;
 
 picture{
-	text{caption = "Stop-signal anticipation task \n 1.  Practice stage 1: \t \t Response timing \n 2.  Practice stage 2: \t \t Reactive control \n 3.  Practice stage 3: \t \t Proactive and reactive control \n 4.  Experiment: \t \t \t \t \t \t Proactive and reactive control \n 5.  Quit"; font_size = 24; text_align = align_left;}taskselect_text;	x = 0; y = 0;
+	text{caption = "Stop-signal anticipation task \n 1.  Practice stage 1: \t \t Response timing \n 2.  Practice stage 2: \t \t Reactive control \n 3.  Practice stage 3: \t \t Proactive and reactive control \n 4.  Experiment: \t \t \t \t \t \t \t \t Proactive and reactive control \n 5.  Quit"; font_size = 24; text_align = align_left;}taskselect_text;	x = 0; y = 0;
 	text{caption = " "; font_size = 24; }taskinput_text;x = 0; y = -200;
 }taskselect_picture;
 
@@ -167,7 +167,7 @@ trial_duration = 1964;
 }trial_null;
 
 trial {
-	trial_duration = 6000;
+	trial_duration = 3000;
 	trial_type = first_response;
 	picture {text {caption = "Thanks for participating!";} goodbye_text; x = 0; y = 0;
 	};
