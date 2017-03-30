@@ -11,7 +11,7 @@ default_font_size = 40;
 begin;
 
 picture{
-text{caption = "Stop-signal anticipation task \n Copyright (c) 2017 Bram B. Zandbelt \n \n 1.  Outside scanner (participant triggers task) \n 2.  Inside MRI scanner (scanner triggers task)"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
+text{caption = "Stop-signal anticipation task \n Copyright (c) 2017 Bram Zandbelt \n \n 1.  Outside scanner (participant triggers task) \n 2.  Inside MRI scanner (scanner triggers task)"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
 	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;`	
 }pic_input_env;
 
@@ -232,7 +232,7 @@ loop int iTask = 1 until iTask > 1 begin
 		logFileName = subjectcode + "_SSAT_Practice03_Proactive-Reactive-Control_" + date_time("ddmmyyhhnnss")+".txt";
 		nRun = 1;
 	elseif task == "4" then
-		logFileName = subjectcode + "_SSAT_Experiment_ProactiveReactiveControl_" + date_time("ddmmyyhhnnss")+".txt";
+		logFileName = subjectcode + "_SSAT_Experiment_Proactive-Reactive-Control_" + date_time("ddmmyyhhnnss")+".txt";
 		nRun = 1;
 	end;
 
@@ -244,16 +244,16 @@ loop int iTask = 1 until iTask > 1 begin
 			# Input file handling
 			input_file seq_file = new input_file;
 			if task == "1" then
-				seq_file.open( "seq_file_TrainingResponseTiming.txt" );
+				seq_file.open( "seq_file_SSAT_Practice01_Response-Timing.txt" );
 				seq_file.set_delimiter( '\t' );
 			elseif task == "2" then
-				seq_file.open( "seq_file_TrainingReactiveInhibition.txt" );
+				seq_file.open( "seq_file_SSAT_Practice02_Reactive-Control.txt" );
 				seq_file.set_delimiter( '\t' );
 			elseif task == "3" then
-				seq_file.open( "seq_file_TrainingProactiveReactiveInhibition" + string(iRun) + ".txt" );
+				seq_file.open( "seq_file_SSAT_Practice03_Proactive-Reactive-Control-Run" + string(iRun) + ".txt" );
 				seq_file.set_delimiter( '\t' );
 			elseif task == "4" then
-				seq_file.open( "seq_file_ExperimentProactiveReactiveInhibition" + string(iRun) + ".txt" );
+				seq_file.open( "seq_file_SSAT_Experiment_Proactive-Reactive-Control-Run" + string(iRun) + ".txt" );
 				seq_file.set_delimiter( '\t' );
 			end;
 
