@@ -11,7 +11,7 @@ default_font_size = 40;
 begin;
 
 picture{
-	text{caption = "Stop-signal anticipation task \n 1.  Outside scanner \n 2.  Inside scanner"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
+text{caption = "Stop-signal anticipation task \n 1.  Outside scanner \n 2.  Inside scanner"; font_size = 24; text_align = align_left;}envselect_text;	x = 0; y = 0;
 	text{caption = " "; font_size = 24; }envinput_text;x = 0; y = -200;
 }pic_input_env;
 
@@ -169,7 +169,7 @@ trial_duration = 1964;
 trial {
 	trial_duration = 6000;
 	trial_type = first_response;
-	picture {text {caption = "Bedankt voor je deelname!";} goodbye_text; x = 0; y = 0;
+	picture {text {caption = "Thanks for participating!";} goodbye_text; x = 0; y = 0;
 	};
 } goodbye_trial;
 
