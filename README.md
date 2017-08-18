@@ -168,7 +168,7 @@ If the practice session has taken place more than one hour before the experiment
 
 ## Citation
 If you use the SSAT, you must cite the software and the original publication describing the task:
-- Zandbelt, Bram (2017): Slice Display. figshare. https://dx.doi.org/10.6084/m9.figshare.4801783.
+- Zandbelt, Bram (2017): Stop-signal anticipation task (SSAT) - stimulus-presentation code. figshare. https://dx.doi.org/10.6084/m9.figshare.4801783.
 - Zandbelt, B. B., & Vink, M. (2010). On the Role of the Striatum in Response Inhibition. PLoS ONE, 5(11), e13848.
 https://doi.org/10.1371/journal.pone.0013848
 
